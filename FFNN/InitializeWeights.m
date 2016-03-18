@@ -5,7 +5,7 @@ function [ w ] = InitializeWeights( nI,nH,nO)
   w = {};
   all = [nI nH nO];
   for i = 1:length(all)-1
-    temp = 0.4*(rand(all(i+1),all(i))-0.2);
+    temp = 0.6*rand(all(i+1),all(i))-0.3;
     w{i} = temp;
   end
   

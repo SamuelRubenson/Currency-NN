@@ -5,7 +5,7 @@ function [ theta ] = InitializeThresh(nI,nH,nO)
   theta = {};
   all = [nH nO];
   for i = 1:length(nH)+1
-    temp = 2*rand(all(i),1) - 1;
+    temp = 0.2*rand(all(i),1) - 0.1;
     theta{i} = temp;
   end
 

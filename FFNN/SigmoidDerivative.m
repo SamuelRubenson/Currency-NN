@@ -1,4 +1,4 @@
 function [ out] = SigmoidDerivative( x )
-  out = 0.5*(1-tanh(0.5*x).^2);
+  out = 0.2*(1-tanh(0.2*x).^2);
 end
 
